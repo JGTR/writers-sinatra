@@ -1,0 +1,12 @@
+Writer name is <%=@writer.name %>
+<br>
+His novel is <%= @writer.novel %>
+<br>
+The theme is <%= @writer.theme %>
+<br>
+
+The influences are 
+<% @writer.influences.each do |influence| %>
+  <%= influence.name %>
+  <%= influence.age %>
+<% end %>

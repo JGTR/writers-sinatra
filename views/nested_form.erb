@@ -1,0 +1,20 @@
+<h1> My form for creating a new writer! </h1>
+
+<form action="/submit" method="POST">  
+  <label> Name </label> <input type="text" name="writer[name]"/>
+  <br>
+  <label> Novel </label> <input type="text" name="writer[novel]"/>
+  <br>
+  <label> Theme</label> <input type="text" name="writer[theme]"/>
+  <br>
+  <label> Influence #1 - name</label> <input type="text" name="writer[influences][0][name]"/>
+   <br>
+  <label> Influence #1 - age</label> <input type="text" name="writer[influences][0][age]"/>
+   <br>
+  <label> Influence #2 - name</label> <input type="text" name="writer[influences][1][name]"/>
+  <br>
+  <label> Influence #2 - age </label> <input type="text" name="writer[influences][1][age]"/>
+    <input type="submit" value"submit"/>
+</form>
+
+
